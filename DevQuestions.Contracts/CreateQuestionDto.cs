@@ -1,4 +1,4 @@
-﻿namespace DevQuestions.Presenters;
+﻿namespace DevQuestions.Contracts;
 
 public record CreateQuestionDto(string Title,  string Body, Guid UserId, Guid[] TagsIds);
 public record GetQuestionDto(string Search,  Guid[] TagsIds, int Page, int PageSize);
